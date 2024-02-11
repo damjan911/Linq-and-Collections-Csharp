@@ -73,7 +73,6 @@ Console.WriteLine("The Average Annual Salary for all Employees is: " + AverageAn
 Console.WriteLine("The Maximum Annual Salary for all Employees is: " + MaxAnnualSalary);
 Console.WriteLine("The Minimum Annual Salary for all Employees is: " + MinAnnualSalary);
 
-// LINQ Method Syntax.
 
 
 
