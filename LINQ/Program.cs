@@ -45,19 +45,19 @@ var resultList = from emp in employeeList
 				 on emp.DepartmentId equals dept.ID
 				 select new
 				 {
-					 FirstName = emp.FirstName,
-					 LastName = emp.LastName,
-					 AnnualSalary = emp.AnnualSalary,
-					 IsManeger = emp.IsManager,
-					 Department = dept.LongName
+				      FirstName = emp.FirstName,
+				      LastName = emp.LastName,
+				      AnnualSalary = emp.AnnualSalary,
+				      IsManeger = emp.IsManager,
+				      Department = dept.LongName
 				 };
 
 foreach (var employee in resultList)
 {
-	Console.WriteLine($"First Name: {employee.FirstName}");
-	Console.WriteLine($"Last Name: {employee.LastName}");
-	Console.WriteLine($"Annual Salary: {employee.AnnualSalary}");
-	Console.WriteLine($"Manager: {employee.IsManeger}");
+    Console.WriteLine($"First Name: {employee.FirstName}");
+    Console.WriteLine($"Last Name: {employee.LastName}");
+    Console.WriteLine($"Annual Salary: {employee.AnnualSalary}");
+    Console.WriteLine($"Manager: {employee.IsManeger}");
     Console.WriteLine($"Department: {employee.Department}");
     Console.WriteLine();
 }
